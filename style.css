@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #242424;
+    background-color: #141414;
     background: linear-gradient(#141414 35%, #0a060a 100%);
 }
 
@@ -40,7 +40,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 400px;
+    gap: 380px;
 }
 
 nav {
@@ -73,4 +73,16 @@ p {
     padding: 10px;
 
     font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-color: #141414;
+        background: linear-gradient(#141414 35%, #0a060a 100%);
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
