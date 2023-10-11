@@ -40,7 +40,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 380px;
+    gap: 220px;
 }
 
 nav {
@@ -73,6 +73,11 @@ p {
     padding: 10px;
 
     font-size: 14px;
+}
+
+a {
+    font-size: 15px;
+    text-decoration: none;
 }
 
 @media (max-width: 700px) {
