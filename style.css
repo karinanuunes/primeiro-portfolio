@@ -14,7 +14,7 @@ body {
 
 #container {
     width: 100vw;
-    height: 100vh;
+    height: 1000px;
     display: flex;
     justify-content: center;
 }
@@ -40,7 +40,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 220px;
+    gap: 100px;
 }
 
 nav {
@@ -78,6 +78,36 @@ p {
 a {
     font-size: 15px;
     text-decoration: none;
+}
+
+input {
+    background-color: #141414;
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    background-color: #1d1c1c;
+}
+
+textarea {
+    background-color: #141414;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    width:500px;
 }
 
 @media (max-width: 700px) {
