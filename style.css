@@ -77,6 +77,7 @@ a {
     body {
         background-color: #141414;
         background: linear-gradient(#141414 35%, #0a060a 100%);
+        height: auto;
     }
 
     header {
@@ -87,6 +88,7 @@ a {
 
     nav {
         text-align: center;
+        gap: 10px;
     }
 
     main {
@@ -97,5 +99,9 @@ a {
     
     main img {
         width: 100%
+    }
+
+    main h1 {
+        text-align: center;
     }
 }
