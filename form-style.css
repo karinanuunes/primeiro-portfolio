@@ -93,3 +93,26 @@ textarea {
     border: 0;
     width:500px;
 }
+
+@media (max-width: 500px) {
+    body {
+        background-color: #141414;
+        background: linear-gradient(#141414 35%, #0a060a 100%);
+    }
+
+    header {
+        width: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+}

@@ -2,39 +2,24 @@
     font-family: 'Gabarito', sans-serif;
     color: #d1d1d1;
 
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: #141414;
     background: linear-gradient(#141414 35%, #0a060a 100%);
-}
 
-#container {
-    width: 100vw;
-    height: 1000px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    height: 100vh;
 }
 
-#box {
-    width: 800px;
-    height: 500px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-#box img{
-    width: 40%;
-    border-radius: 50%;
-    padding: 20px;
-    float: left;
-}
-
-#header {
-    width: 800px;
+header {
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -49,7 +34,15 @@ nav {
     gap: 20px;
 }
 
-#about {
+img{
+    width: 40%;
+    border-radius: 50%;
+    padding: 20px;
+    float: left;
+}
+
+main {
+    width: 800px;
     flex-direction: column;
     padding: 15px 30px 20px 20px;
     text-align: justify;
@@ -66,7 +59,7 @@ p {
     color: #b1b1b1;
 }
 
-#footer {
+footer {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -80,44 +73,29 @@ a {
     text-decoration: none;
 }
 
-input {
-    background-color: #141414;
-    width: 250px;
-    height: 30px;
-    margin-top: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 0;
-}
-
-input[type="checkbox"] {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-}
-
-input[type="submit"] {
-    width: 200px;
-    background-color: #1d1c1c;
-}
-
-textarea {
-    background-color: #141414;
-    margin-top: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 0;
-    width:500px;
-}
-
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     body {
         background-color: #141414;
         background: linear-gradient(#141414 35%, #0a060a 100%);
     }
-    #container {
+
+    header {
+        width: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    main {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        max-width: 100%
+    }
+    
+    main img {
+        width: 100%
     }
 }
